@@ -1,0 +1,195 @@
+body {
+    background: #2e2c2c;
+    transition: background-color 4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.text-entry {
+  font-size: 30px;
+  font-weight: 700;
+  color: transparent;
+  background: linear-gradient(to right, #ED6419 -3.08%, #9629E7 14.74%, #0860C7 72.12%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(60) forwards;
+  position: relative;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.text-entry-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-entry-input input {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.text-entry-input input::placeholder {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.text-entry-input input:focus {
+    outline: none;
+}
+
+.submit-button {
+    margin-left: 20px;
+    padding: 10px;
+    width: 20vw;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 600ms;
+}
+
+.submit-button:hover {
+    background: #1dd6be;
+    transition: 600ms;
+}
+
+.input-name-error-message {
+    display: none;
+    color: #da5252;
+    font-size: 16px;
+    margin-left: 1.6rem;
+}
+
+/* NextPage Arrow Animation */
+ @-webkit-keyframes animate-svg-fill-1 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(0, 0, 0);
+    }
+  }
+  
+  @keyframes animate-svg-fill-1 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(0, 0, 0);
+    }
+  }
+
+  .svg-animation {
+    animation: animate-svg-fill-1 0.7s ease-in 0.8 both;
+  }
+  
+  .next-page-arrow {
+    -webkit-animation: animate-svg-fill-1 0.7s ease-in 0.8s both;
+            animation: animate-svg-fill-1 0.7s ease-in 0.8s both;
+  }
+
+  svg {
+    width: 20px;
+    margin: auto;
+  }
+
+  .next-step-button {
+    display: none;
+    margin: 2rem auto;
+    padding: 10px;
+    width: 15%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 600ms;
+  }
+
+  .next-step-button:hover {
+    background: linear-gradient(to bottom right, #ff6b6b, #3a1c71);
+    transition: backgroud 1s ease;
+  }
+
+  .text-entry-input-invalid-name {
+	display: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(to right, #ED6419 -3.08%, #9629E7 14.74%, #0860C7 72.12%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(60) forwards;
+    position: relative;
+}
+
+.text-entry-input-invalid-name-backdoor {
+	  display: none;
+	  justify-content: center;
+    margin-left: 20px;
+	  margin: auto;
+    padding: 10px;
+    width: 27%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 600ms;
+}
+
+.text-entry-input-invalid-name-backdoor-link {
+	text-decoration: none;
+}
+
+.text-entry-input-loading {
+    display: none;
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(to right, #ED6419 -3.08%, #9629E7 14.74%, #0860C7 72.12%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(60) forwards;
+    position: relative;
+}
+
+.text-entry-welcome-message {
+    display: none;
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(to right, #ED6419 -3.08%, #9629E7 14.74%, #0860C7 72.12%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(60) forwards;
+    position: relative;
+}
