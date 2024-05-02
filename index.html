@@ -27,8 +27,7 @@
         </div>
 
         <div class="text-entry-input-invalid-name-container">
-            <p id="text-entry-input-invalid-name" class="text-entry-input-invalid-name">....Você não é a Pessoa que Eu Estou Esperando</p>       
-            <a id="text-entry-input-invalid-name-backdoor" class="text-entry-input-invalid-name-backdoor-link" href="https://google.com"><button class="text-entry-input-invalid-name-backdoor">Saia Por Essa Porta <span>🚪</span></button></a>
+            <p id="text-entry-input-invalid-name" class="text-entry-input-invalid-name">....Você não é a Pessoa que Eu Estou Esperando</p>
         </div>
 
         <div class="text-entry-welcome-message">
@@ -36,14 +35,30 @@
         </div>
 
         <div class="next-step-button-container">
-            <button onclick="nextPage()" id="next-step-button" class="next-step-button">
+            <button onclick="nextPageButtonClickHandler()" id="next-step-button" class="next-step-button">
                 <svg class="svg-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
               </svg>
             </button>
         </div>
-    </div>
-    
+    </div> 
+
+    <div id="main-content">
+        <div class="earth-images-container">
+            <img class="earth-images earth-720p" src="./assets/earth-720p.png" alt="">
+            <img class="earth-images earth-1080p" src="./assets/earth-1080p.png" alt="">
+            <img id="cute-cat" class="earth-images earth-4K" src="./assets/cute-cat.jpg" alt="">
+        </div>
+        <div class="image-options">
+            <form class="options" action="">
+                <select name="earth-options" id="earth-options" onchange="changeEarthImage()">
+                    <option selected value="earth-720p">720p</option>
+                    <option value="earth-1080p">1080p</option>
+                    <option value="earth-4K">4K</option>
+                </select>
+            </form> 
+        </div>
+    </div>  
     <script src="script.js"></script>
 </body>
 </html>
