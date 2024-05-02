@@ -4,7 +4,6 @@ const submitButton = document.getElementById('submit-button');
 const loadingText = document.getElementById('text-entry-input-loading');
 const invalidName = document.getElementById('text-entry-input-invalid-name');
 const backdoorButton = document.getElementById('text-entry-input-invalid-name-backdoor');
-console.log(backdoorButton);
 const textEntry = document.getElementById('text-entry');
 const welcomeMessage = document.getElementById('text-entry-welcome-message');
 const nextPageButton = document.getElementById('next-step-button');
@@ -26,7 +25,7 @@ function submitName () {
 function checkName (name) {
     if (name === 'raíssa' || name === 'raissa') {
         displayWelcomeMessage();
-        nextPageButton.style.display = 'flex';
+        nextPageButton.style.display = 'block';
     } else {
         displayInvalidNameMessage();
     }

@@ -118,7 +118,7 @@ body {
     display: none;
     margin: 2rem auto;
     padding: 10px;
-    width: 15%;
+    width: 30%;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -192,4 +192,12 @@ body {
     white-space: nowrap;
     animation: typing 1s steps(60) forwards;
     position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .text-entry {
+      font-size: 4vw;
+      text-wrap: wrap;
+      text-align: center;
+  }
 }
